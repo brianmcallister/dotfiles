@@ -1,0 +1,63 @@
+<<<<<<< HEAD
+# Custom aliases
+alias b='bundle exec'
+alias g='git status'
+alias ga='git add'
+alias gaa='git add .'
+alias gc='git commit'
+alias gd='git diff'
+
+# PATH additions
+# npm and gem installed binaries.
+export PATH=/usr/local/share/npm/bin:/usr/local/Cellar/ruby/1.9.3-p286/bin:$PATH
+
+# Custom prompt.
+PS1="\[${BOLD}${MAGENTA}\]\u\[$WHITE\]:\w\$([[ -n \$(git branch 2> /dev/null) ]] && echo \"(\")\[$GREEN\]\$(parse_git_branch)\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \")\") $ \[$RESET\]"
+=======
+# PATH additions
+export PATH="~/bin:$PATH"
+export PATH=$PATH:~/.bin
+
+# RVM
+echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bash_profile
+
+# Grails install for Cory Booker Challenge
+GROOVY_HOME=/usr/share/groovy; export GROOVY_HOME
+PATH=$GROOVY_HOME/bin:$PATH; export PATH
+
+GRAILS_HOME=/usr/share/grails; export GRAILS_HOME
+PATH=$GRAILS_HOME/bin:$PATH; export PATH
+>>>>>>> dc9281827023292949eaba062b825d6f0c7969ff
+
+# Git credentials
+# Not in the repository, to prevent people from accidentally committing under my name
+GIT_AUTHOR_NAME="Brian McAllister"
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+git config --global user.name "$GIT_AUTHOR_NAME"
+GIT_AUTHOR_EMAIL="brian@brianmcallister.com"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+<<<<<<< HEAD
+git config --global user.email "$GIT_AUTHOR_EMAIL"
+
+# Nice Git log
+# http://www.jukie.net/bart/blog/pimping-out-git-log
+git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+
+# Use TextMate as the default editor.
+git config --global core.editor "mate -w"
+
+# Better colors
+git config --global color.status.added green
+git config --global color.status.changed yellow
+git config --global color.status.untracked red
+
+# Create a new tab and cd to the current directory.
+function nt() {
+  osascript -e 'tell application "Terminal"' \
+  -e 'tell application "System Events" to tell process "Terminal" to keystroke "t" using command down' \
+  -e "do script with command \"cd `pwd`;clear\" in selected tab of the front window" \
+  -e 'end tell' &> /dev/null
+}
+=======
+git config --global user.email "$GIT_AUTHOR_EMAIL"
+>>>>>>> dc9281827023292949eaba062b825d6f0c7969ff
