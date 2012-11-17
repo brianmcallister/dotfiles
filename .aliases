@@ -19,6 +19,7 @@ alias gc="git commit"
 alias gp="git pull; git submodule foreach git pull origin master"
 
 # Misc
+alias b='bundle exec'
 alias h="history"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
