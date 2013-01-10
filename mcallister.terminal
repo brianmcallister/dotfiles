@@ -7,10 +7,11 @@
 	<key>BackgroundColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
-	AAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdCXE5TQ29sb3JTcGFjZVYkY2xhc3NLMCAw
-	IDAgMC45NgAQAYAC0hAREhNaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5T
-	T2JqZWN0XxAPTlNLZXllZEFyY2hpdmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2JucHJ3
-	gouTlp+xtLkAAAAAAAABAQAAAAAAAAAZAAAAAAAAAAAAAAAAAAAAuw==
+	AAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdCXE5TQ29sb3JTcGFjZVYkY2xhc3NPECow
+	LjA4MTIwMzg4Njc1IDAuMDgwMjE1MzAwODkgMC4wODcxMDUxMjkwOAAQAYAC0hAREhNa
+	JGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5TT2JqZWN0XxAPTlNLZXllZEFy
+	Y2hpdmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KPkZOYo6y0t8DS1doAAAAAAAABAQAA
+	AAAAAAAZAAAAAAAAAAAAAAAAAAAA3A==
 	</data>
 	<key>Bell</key>
 	<false/>
@@ -82,7 +83,7 @@
 	dHmEjZWYobO2uwAAAAAAAAEBAAAAAAAAABkAAAAAAAAAAAAAAAAAAAC9
 	</data>
 	<key>UseBoldFonts</key>
-	<false/>
+	<true/>
 	<key>UseBrightBold</key>
 	<false/>
 	<key>VisualBell</key>
@@ -207,7 +208,7 @@
 		<string>[34~</string>
 	</dict>
 	<key>name</key>
-	<string>Pro</string>
+	<string>mcallister</string>
 	<key>rowCount</key>
 	<integer>30</integer>
 	<key>shellExitAction</key>
