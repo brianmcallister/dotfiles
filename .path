@@ -1,5 +1,5 @@
 # GNU core utils.
-PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
 # Gem path
 PATH=$(brew --prefix ruby)/bin:$PATH
