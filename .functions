@@ -45,7 +45,6 @@ function httpcompression() {
 # Get the size of a directory or file.
 function sizeof() {
   du -skh $1
-  echo # newline
 }
 
 # Syntax-highlight JSON strings or files
