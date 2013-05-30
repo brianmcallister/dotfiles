@@ -1,3 +1,8 @@
+# Open a file with Photoshop
+function psd() {
+  open -a /Applications/Adobe\ Photoshop\ CS5.1/Adobe\ Photoshop\ CS5.1.app $1
+}
+
 # Create a new directory and enter it
 function mkd() {
   mkdir -p "$@" && cd "$@"

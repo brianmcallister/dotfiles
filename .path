@@ -1,3 +1,6 @@
+# Homebrew
+PATH=$(brew --prefix)/bin:$PATH
+
 # GNU core utils.
 PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
