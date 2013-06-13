@@ -9,6 +9,7 @@ alias -- -="cd -"
 alias cdir="pwd | pbcopy"
 
 # Git shortcuts
+alias gb="git rev-parse --abbrev-ref HEAD | pbcopy"
 alias g="git status"
 alias gd="git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
 alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
