@@ -11,6 +11,11 @@ if [ -f ~/git-completion.bash ]; then
   . ~/git-completion.bash
 fi
 
+# Load RVM, if it exists.
+if [ -f ~/.rvm/scripts/rvm ]; then
+  source ~/.rvm/scripts/rvm
+fi
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
 
