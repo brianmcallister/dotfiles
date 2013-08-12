@@ -6,6 +6,11 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done
 unset file
 
+# Execute the git-completion script if it exists.
+if [ -f ~/git-completion.bash ]; then
+  . ~/git-completion.bash
+fi
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
 
