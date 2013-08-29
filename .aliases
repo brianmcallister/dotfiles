@@ -20,6 +20,7 @@ alias gaa="git add -A"
 alias gc="git commit"
 alias gpr="git pull --rebase"
 alias gp="git pull; git submodule foreach git pull origin master"
+alias gbrm="git branch --merged | grep -v '\*' | xargs -n 1 git branch -d"
 
 # Misc
 alias b='bundle exec'
