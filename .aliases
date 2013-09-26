@@ -10,8 +10,6 @@ alias cdir="pwd | pbcopy"
 
 # Git shortcuts
 alias g="git status"
-alias gf="git log | head -1 | sed 's/commit //g' | pbcopy"
-alias gb="git rev-parse --abbrev-ref HEAD | pbcopy"
 alias gd="git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
 alias gdc="git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat --cached"
 alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
@@ -20,6 +18,7 @@ alias gaa="git add -A"
 alias gc="git commit"
 alias gpr="git pull --rebase"
 alias gp="git pull; git submodule foreach git pull origin master"
+alias gcm="git checkout master"
 alias gbrm="git branch --merged | grep -v '\*' | xargs -n 1 git branch -d"
 
 # Misc
