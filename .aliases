@@ -12,6 +12,7 @@ alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset 
 alias ga="git add"
 alias gaa="git add -A"
 alias gc="git commit"
+alias gcv="git commit --no-verify"
 alias gpr="git fetch && git rebase -p @{u}"
 alias gm="git merge --no-ff"
 alias gp="git pull; git submodule foreach git pull origin master"
