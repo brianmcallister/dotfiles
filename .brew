@@ -1,6 +1,2 @@
 #!/bin/bash
-brew update
-brew install coreutils
-brew install findutils
-brew install bash
-brew cleanup
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"

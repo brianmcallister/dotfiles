@@ -1,0 +1,16 @@
+install phinze/cask/brew-cask
+tap caskroom/versions
+
+update
+cask update
+
+cask install dropbox 2> /dev/null
+cask install google-chrome 2> /dev/null
+cask install google-chrome-canary 2> /dev/null
+cask install firefox 2> /dev/null
+cask install hipchat 2> /dev/null
+cask install textmate 2> /dev/null
+cask install the-unarchiver 2> /dev/null
+cask install transmission 2> /dev/null
+cask install virtualbox 2> /dev/null
+cask install vlc 2> /dev/null
