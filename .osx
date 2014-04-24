@@ -27,9 +27,6 @@ defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreS
 # Enable smooth scrolling
 defaults write NSGlobalDomain NSScrollAnimationEnabled -bool true
 
-# Disable opening and closing window animations
-defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
-
 # Increase window resize speed for Cocoa applications
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
