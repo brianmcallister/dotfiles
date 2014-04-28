@@ -6,5 +6,6 @@ install bash
 install git
 install node
 install tree
+install ssh-copy-id
 
 cleanup
