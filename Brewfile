@@ -7,5 +7,7 @@ install git
 install node
 install tree
 install ssh-copy-id
+install rbenv
+install ruby-build
 
 cleanup
