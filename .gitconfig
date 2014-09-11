@@ -1,8 +1,19 @@
 [alias]
-  # Clone a repository including all submodules,
-  c = clone --recursive
-  
-  # Switch to a branch, creating it if necessary.
+  co = checkout
+  s = status
+  d = "!sh -c 'git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat'"
+  dc = "!sh -c 'git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat --cached'"
+  lg = "log --graph --pretty=format:'%Cred%h%Creset %Cgreen%cr%C(yellow)%d%Creset %s %C(dim white)%an%Creset' --abbrev-commit --date=relative"
+  a = add
+  aa = add -A
+  c = commit
+  cv = commit --no-verify
+  pr = "!sh -c 'git fetch && git rebase -p @{u}'"
+  m = merge --no-ff
+  cm = checkout master
+  p = "!sh -c 'git pull; git submodule foreach git pull origin master'"
+  brm = "!sh -c 'git branch --merged | grep -v \\* | xargs -n 1 git branch -d'"
+  nb = "!sh -c 'git rev-parse --abbrev-ref HEAD | xargs git push -u origin'"
   go = checkout -B
   
   # Show verbose output about tags, branches or remotes.
@@ -53,3 +64,7 @@
   
 [push]
   default = simple
+  
+[user]
+  name = Brian McAllister
+  email = brian@brianmcallister.com
