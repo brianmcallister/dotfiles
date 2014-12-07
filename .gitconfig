@@ -1,8 +1,10 @@
 [alias]
   co = checkout
   s = status
-  d = "!sh -c 'git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat'"
-  dc = "!sh -c 'git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat --cached'"
+  # d = "!sh -c 'git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat'"
+  # dc = "!sh -c 'git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat --cached'"
+  d = difftool --no-prompt --extcmd icdiff
+  dc = difftool --cached --no-prompt --extcmd icdiff
   lg = "log --graph --pretty=format:'%Cred%h%Creset %Cgreen%cr%C(yellow)%d%Creset %s %C(dim white)%an%Creset' --abbrev-commit --date=relative"
   a = add
   aa = add -A
