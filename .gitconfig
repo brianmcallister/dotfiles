@@ -12,6 +12,7 @@
   cv = commit --no-verify
   pr = "!sh -c 'git fetch && git rebase -p @{u}'"
   m = merge --no-ff
+  mom = merge --no-ff origin/master
   cm = checkout master
   p = "!sh -c 'git pull; git submodule foreach git pull origin master'"
   brm = "!sh -c 'git branch --merged | grep -v \\* | xargs -n 1 git branch -d'"
