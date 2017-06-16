@@ -100,7 +100,6 @@ PS1="\[${BOLD}${MAGENTA}\]\u\[$WHITE\]:\w\$([[ -n \$(git branch 2> /dev/null) ]]
 export NVM_DIR="/Users/brianmcallister/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-export PATH="$HOME/.yarn/bin:$PATH"
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
