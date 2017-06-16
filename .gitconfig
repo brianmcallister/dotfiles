@@ -18,7 +18,7 @@
   brm = "!sh -c 'git branch --merged | grep -v \\* | xargs -n 1 git branch -d'"
   nb = "!sh -c 'git rev-parse --abbrev-ref HEAD | xargs git push -u origin'"
   go = checkout -B
-  
+
   # Show verbose output about tags, branches or remotes.
   tags = tag -l
   branches = branch -a
@@ -26,7 +26,7 @@
 
 [grep]
   lineNumber = true
-  
+
 [apply]
   # Detect whitespace errors when applying a patch.
   #whitespace = fix
@@ -35,39 +35,45 @@
   # Use custom `.gitignore` and `.gitattributes`.
   excludesfile = ~/.gitignore
   attributesfile = ~/.gitattributes
-  
-  # Treat spaces before tabs, lines that are indented with 8 or more spaces, 
+
+  # Treat spaces before tabs, lines that are indented with 8 or more spaces,
   # and all kinds of trailing whitespace as an error.
   whitespace = space-before-tab,indent-with-non-tab,trailing-space
+	compression = 1
 
 [color]
-  # Use colors in Git commands that are capable of colored output when 
+  # Use colors in Git commands that are capable of colored output when
   # outputting to the terminal.
   ui = auto
-  
+
 [color "branch"]
   current = yellow reverse
   local = yellow
   remote = green
-  
+
 [color "diff"]
   meta = yellow bold
   frag = magenta bold
   old = red bold
   new = green bold
-  
+
 [color "status"]
   added = green
   changed = yellow
   untracked = red
-  
+
 [merge]
   # Include summaries of merged commits in newly created merge commit messages.
   log = true
-  
+
 [push]
   default = simple
-  
+
 [user]
-  name = Brian McAllister
-  email = brian@brianmcallister.com
+	name = Brian McAllister
+	email = brian@brianmcallister.com
+	signingkey = D54966C22F5E4126
+[commit]
+	gpgsign = true
+[http]
+	postBuffer = 1048576000
