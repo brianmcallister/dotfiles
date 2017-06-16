@@ -44,6 +44,10 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 PATH=$(brew --prefix)/bin:$PATH
 PATH=$(brew --prefix)/sbin:$PATH
 
+# nvm
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
 # GNU core utils.
 # PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
